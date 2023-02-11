@@ -1,0 +1,161 @@
+ERROR - 2023-02-11 10:49:32 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\msaa\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp1\htdocs\msaa\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp1\htdocs\msaa\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\msaa\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp1\htdocs\msaa\app\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp1\htdocs\msaa\app\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+#8 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#9 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp1\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp1\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp1\\htdoc...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp1\htdocs\msaa\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp1\htdocs\msaa\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\msaa\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp1\htdocs\msaa\app\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp1\htdocs\msaa\app\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+#7 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#8 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp1\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+CRITICAL - 2023-02-11 10:49:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lp`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 10:54:26 --> Undefined array key "telp"
+in APPPATH\Views\landpage.php on line 42.
+ 1 APPPATH\Views\landpage.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telp"', 'APPPATH\\Views\\landpage.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 10:55:07 --> Array callback must have exactly two elements
+in APPPATH\Views\landpage.php on line 42.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 4 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 10:59:41 --> Undefined array key "telp"
+in APPPATH\Views\landpage.php on line 42.
+ 1 APPPATH\Views\landpage.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telp"', 'APPPATH\\Views\\landpage.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:02:12 --> Call to undefined method App\Models\lpModel::getrow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\Model->__call('getrow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:03:08 --> Call to undefined method App\Models\lpModel::getRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:03:39 --> Call to a member function getRow() on null
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:03:47 --> Undefined array key "telp"
+in APPPATH\Views\landpage.php on line 42.
+ 1 APPPATH\Views\landpage.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telp"', 'APPPATH\\Views\\landpage.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:10:45 --> syntax error, unexpected end of file
+in APPPATH\Views\landpage.php on line 878.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 3 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:11:07 --> syntax error, unexpected end of file
+in APPPATH\Views\landpage.php on line 878.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 3 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:11:29 --> Undefined array key "telp"
+in APPPATH\Views\landpage.php on line 43.
+ 1 APPPATH\Views\landpage.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telp"', 'APPPATH\\Views\\landpage.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-11 11:15:43 --> Undefined variable $email
+in APPPATH\Views\landpage.php on line 731.
+ 1 APPPATH\Views\landpage.php(731): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'APPPATH\\Views\\landpage.php', 731)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

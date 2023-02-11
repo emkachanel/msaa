@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(6, 101, 183, 0.9);
+  background: rgba(6, 100, 183, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
