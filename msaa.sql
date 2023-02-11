@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Feb 2023 pada 18.59
+-- Waktu pembuatan: 11 Feb 2023 pada 22.27
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -47,8 +47,7 @@ CREATE TABLE `lp` (
 --
 
 INSERT INTO `lp` (`id`, `comp_name`, `email`, `telp`, `addres`, `logo`, `visi`, `misi`, `about`, `facebook`, `instagram`, `whatsapp`) VALUES
-(1, 'MSAA', 'msaa@gmail.com', '021123456', 'jakarta', '', '', '', '', '', '', '0812123456'),
-(2, '', '', '', '', 'LogoMSAA.png', '', '', '', '', '', '');
+(1, 'MSAA', 'msaa@gmail.com', '021123456', 'jakarta', 'logoMSAA.png', '', '', '', '', '', '0812123456');
 
 -- --------------------------------------------------------
 
@@ -71,12 +70,8 @@ CREATE TABLE `portfolio` (
 
 CREATE TABLE `service` (
   `id` int(11) NOT NULL,
-  `service_1` longtext DEFAULT NULL,
-  `service_2` longtext DEFAULT NULL,
-  `service_3` longtext DEFAULT NULL,
-  `service_4` longtext DEFAULT NULL,
-  `service_5` longtext DEFAULT NULL,
-  `service_6` longtext DEFAULT NULL
+  `Judul` varchar(255) DEFAULT NULL,
+  `isi` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -105,6 +100,7 @@ CREATE TABLE `team` (
   `positions` varchar(255) NOT NULL,
   `quote` varchar(255) NOT NULL,
   `img` varchar(255) NOT NULL,
+  `telp` varchar(15) NOT NULL,
   `socialmeida_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

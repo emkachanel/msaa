@@ -2,6 +2,7 @@
 <?= $this->section('content'); ?>
 
 
+
 <div class="position-relative start-50 translate-middle" style="margin-top:200px;">
     <H1>PROFIL</H1>
     <?php foreach ($profil as $profils) : ?>
