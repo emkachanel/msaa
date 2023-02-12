@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin::index');
+$routes->get('admin/portfolio_create', 'admin::portfolio_create');
+$routes->post('admin/portfolio_save', 'admin::portfolio_save');
 
 /*
  * --------------------------------------------------------------------

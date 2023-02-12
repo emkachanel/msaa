@@ -22,4 +22,26 @@ class admin extends BaseController
         ];
         return view('admin/index',$data);
     }
+
+    // portfolio
+public function portfolio_create()
+{
+    return view('portfolio/form');
+}
+    public function portfolio_save()
+    {
+        $file = $this->request->getfile('ficture');
+        $file->Move ('assets/img/portfolio');
+        $ficturename= $file->getname();
+        $save= new portfolioModel();
+        $save->insert(
+            [
+                'name'=>$this->request->getvar('name'),
+                'title'=>$this->request->getvar('title'),
+                'ficture'=>$ficturename
+            ]
+        );
+        session()->setflashdata('pesan',' Add succes');
+        return redirect()->to('admin');
+    }
 }
