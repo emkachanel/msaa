@@ -46,21 +46,21 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="<?=base_url();?>/admin/portfolio_save" method="post">
-        <li class="list-group-item">
-            <div class="mb-3">
-                    <label for="name" class="form-label">Judul</label>
-                    <input type="text" class="form-control" id="name" name="name"placeholder="">
+          <li class="list-group-item">
+              <div class="mb-3">
+                  <form action="admin/portfolio_save" method="post">
+                  <label for="judul" class="form-label">Judul</label>
+                    <input type="text" class="form-control" id="judul" name="judul"placeholder="">
     
                 </div>
             <div class="mb-3">
-                    <label for="title" class="form-label">isi</label>
-                    <input type="text" class="form-control" id="title" name="title"placeholder="">
+                    <label for="isi" class="form-label">isi</label>
+                    <input type="text" class="form-control" id="isi" name="isi"placeholder="">
     
                 </div>
             <div class="mb-3">
-                    <label for="ficture" class="form-label">Gambar</label>
-                    <input type="file" class="form-control" id="ficture" name="ficture"placeholder="">
+                    <label for="gambar" class="form-label">Gambar</label>
+                    <input type="file" class="form-control" id="gambar" name="gambar"placeholder="">
     
                 </div>
             </li>
@@ -81,10 +81,10 @@
         <?php foreach($portfolio as $port):?>
         <div class="col">
             <div class="card">
-                <img src="<?= base_url(); ?>/assets/img/portfolio/<?=$port['ficture'];?>" class="card-img-top img-thumbnail" alt="...">
+                <img src="<?= base_url(); ?>/assets/img/portfolio/<?=$port['gambar'];?>" class="card-img-top img-thumbnail" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><?=$port['name'];?></h5>
-                    <p class="card-text"><?=$port['title'];?></p>
+                    <h5 class="card-title"><?=$port['judul'];?></h5>
+                    <p class="card-text"><?=$port['isi'];?></p>
                     <a class="btn btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
                     <a class="btn btn-danger" href=""><i class="bi bi-trash"></i></a>
                 </div>

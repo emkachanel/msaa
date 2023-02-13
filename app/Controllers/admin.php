@@ -24,24 +24,23 @@ class admin extends BaseController
     }
 
     // portfolio
-public function portfolio_create()
-{
-    return view('portfolio/form');
-}
     public function portfolio_save()
     {
-        $file = $this->request->getfile('ficture');
-        $file->Move ('assets/img/portfolio');
-        $ficturename= $file->getname();
-        $save= new portfolioModel();
+        $filegambar = $this->request->getFile('gambar');
+        $filegambar->move('assets/img/portfolio');
+        $namagambar = $filegambar->getName();
+
+        $save = new portfolioModel();
         $save->insert(
             [
-                'name'=>$this->request->getvar('name'),
-                'title'=>$this->request->getvar('title'),
-                'ficture'=>$ficturename
+                'judul' => $this->request->getVar('judul'),
+                'isi' => $this->request->getVar('isi'),
+                'gambar' => $namagambar
+
             ]
         );
-        session()->setflashdata('pesan',' Add succes');
+        dd('gambar');
+    session()->setFlashdata('pesan','porfolio berhasil di tambah');
         return redirect()->to('admin');
     }
 }
