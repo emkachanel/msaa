@@ -75,7 +75,7 @@
   </div>
 </div>
 <div class="portfoli" style="margin-top:1px;">
-    <H1>PORTFOLIO</H1>
+   <p>Portfolio</p>
     <Button type="button" class="btn btn-primary mb-3"data-bs-toggle="modal" data-bs-target="#portfoliotambah">Tambah Data</Button>
     <div class="row row-cols-1 row-cols-md-6 g-4"style="max-width:1100px;height:250px;">
         <?php foreach($portfolio as $port):?>
