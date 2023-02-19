@@ -20,6 +20,7 @@
     <link href="<?= base_url(); ?>/sbadmin/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?=base_url();?>/assets/css/style.css">
+    
 </head>
 
 <body id="page-top">
@@ -156,6 +157,7 @@
 
     <!-- Core plugin JavaScript-->
     <script src="<?= base_url(); ?>/sbadmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+   
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url(); ?>/sbadmin/js/sb-admin-2.min.js"></script>
