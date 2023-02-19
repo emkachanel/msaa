@@ -77,11 +77,11 @@
 <div class="portfoli" style="margin-top:1px;">
     <H1>PORTFOLIO</H1>
     <Button type="button" class="btn btn-primary mb-3"data-bs-toggle="modal" data-bs-target="#portfoliotambah">Tambah Data</Button>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="row row-cols-1 row-cols-md-6 g-4"style="max-width:1100px;height:250px;">
         <?php foreach($portfolio as $port):?>
         <div class="col">
             <div class="card">
-                <img src="<?= base_url(); ?>/assets/img/portfolio/<?=$port['ficture'];?>" class="card-img-top img-thumbnail" alt="...">
+                <img src="<?= base_url(); ?>/assets/img/portfolio/<?=$port['ficture'];?>" class="card-img-top img-thumbnail" alt="..."style="max-width:250px;height:250px;">
                 <div class="card-body">
                     <h5 class="card-title"><?=$port['name'];?></h5>
                     <p class="card-text"><?=$port['title'];?></p>
@@ -96,7 +96,8 @@
 
 </div>
 
-<div class="service" style="margin-top:100px;">
+
+<div class="service" style="margin-top:250px;">
     <H1>SERVICES</H1>
     <button type="button" class="btn btn-primary mb-3">Tambah Data</button>
     <div class="row row-cols-1 row-cols-md-4 g-4">

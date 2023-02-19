@@ -40,7 +40,7 @@ class admin extends BaseController
             ]
         );
     session()->setFlashdata('pesan','porfolio berhasil di tambah');
-        return redirect()->to('portfolio');
+        return redirect()->to('admin');
     }
 
 }
