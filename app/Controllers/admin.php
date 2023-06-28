@@ -23,6 +23,41 @@ class admin extends BaseController
         return view('admin/index',$data);
     }
 
+    public function update($id)
+    {
+
+        
+            $profil=$this->lpModel->getprofil($id);
+            $data=[
+                'profil' => $profil
+            ];
+           
+        
+        // $filelogo = $this->request->getfile('logo');
+        // $namalogo = $filelogo->getname();
+
+        // if(!empty($namalogo)){
+        //     $filelogo->move('assets/img/logo');
+        // }else {
+        //     $namalogo=$this->request->getVar('logolama');
+        // }
+
+        $save = new lpModel();
+        $data = [
+            'namalembaga'=>$this->request->getVar('comp_name'),
+                'email'=>$this->request->getVar('email'),
+                'telp'=>$this->request->getVar('telp'),
+                'alamat'=>$this->request->getVar('alamat'),
+                'telp'=>$this->request->getVar('telp'), 
+                'whatsapp'=>$this->request->getVar('whatsapp'), 
+               
+
+        ];
+        $save->update($id,$data);
+        session()->setFlashdata('pesan','Data Berhasil Di UPDATE');
+        return redirect()->to('profil');
+    }
+
     // portfolio
     public function simpan()
     {

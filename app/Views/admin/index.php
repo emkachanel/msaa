@@ -12,7 +12,64 @@
         </center>
 
 
+<!-- profil -->
 
+<!-- form edit -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">edit profil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <?php foreach ($profil as $profils) : ?>
+            <form action="admin/update<?= $profils['id'];?>" method="post" enctype="multipart/form-data">
+               
+  <fieldset enable>
+   
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">nama lembaga</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<?= $profils['comp_name']; ?>">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">email</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<?= $profils['email']; ?>">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">telp</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<?= $profils['telp']; ?>">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">alamat</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<?= $profils['addres']; ?>">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">wa</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="<?= $profils['whatsapp']; ?>">
+    </div>
+    
+  </fieldset>
+
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button submit" class="btn btn-primary">Save changes</button>
+        <?php endforeach; ?>    
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end form edit -->
 <div class="position-relative start-50 translate-middle" style="margin-top:200px;">
     <H1>PROFIL</H1>
     <?php foreach ($profil as $profils) : ?>
@@ -28,7 +85,7 @@
                         <p class="card-text"><small class="text-muted"><i class="bi bi-telephone"></i> <?= $profils['telp']; ?></small></p>
                         <p class="card-text"><small class="text-muted"><i class="bi bi-geo-alt-fill"></i> <?= $profils['addres']; ?></small></p>
                         <p class="card-text"><small class="text-muted"><i class="bi bi-whatsapp"></i> <?= $profils['whatsapp']; ?></small></p>
-                        <a class="btn btn-warning" href=""><i class="bi bi-pencil-square"></i></a>
+                        <a class="btn btn-warning" href=""data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square"></i></a>
                     </div>
                 </div>
             </div>

@@ -39,6 +39,7 @@ $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin::index');
 $routes->get('admin/portfolio_create', 'admin::portfolio_create');
 $routes->post('admin/simpan', 'admin::simpan');
+$routes->post('admin/update(:any)', 'admin::update/$1');
 
 /*
  * --------------------------------------------------------------------
