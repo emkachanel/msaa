@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class portfolioModel extends Model
+class rekananModel extends Model
 {
-    protected $table      = 'portfolio';
+    protected $table      = 'rekanan';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id','judul','ket','gambar'];
-    public function getportfolio($id= false)
+    protected $allowedFields = ['id','pimpinan','nama_perusahaan','alamat','kontak','ket','logo'];
+    public function getrekanan($id= false)
     {
         
             if ($id == false) {

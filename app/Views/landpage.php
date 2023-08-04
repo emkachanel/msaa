@@ -54,10 +54,10 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
-      
+    
       <img class="image"src="<?=base_url();?>/assets/img/logoMSAA.png" alt="logo" style="width: 100px;">
-     
-      <!-- <h1 class="logo"><a href="index.html">MSAA</a></h1> -->
+
+      
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -140,46 +140,74 @@
   <main id="main">
 
     <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes">
+    <section id="icon-boxes" class="icon-boxes"style="widht:100%;">
       <div class="container">
+<!--  -->
+<div class="card-group p-2 tex-center">
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="200">
+    <img src="assets/img/icon/pidana.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Pidana</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="300">
+    <img src="assets/img/icon/perdata.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Perdata</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="400">
+    <img src="assets/img/icon/perceraian.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Perkawainan <br> Perceraian</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="500">
+    <img src="assets/img/icon/Pertanahan.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Pertanahan</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="600">
+    <img src="assets/img/icon/Pajak.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Pajak</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="700">
+    <img src="assets/img/icon/Kepailitan.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">Kepailitan</a>
+    </div>
+  </div>
+  <div class="card m-1" style="width: 18rem;"data-aos="fade-up" data-aos-delay="800">
+    <img src="assets/img/icon/ketenagakerjaan.png" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+      <h5 class="card-title"></h5>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <a href="#" class="btn btn-primary">ketenagakerjaan</a>
+    </div>
+  </div>
+</div>
+<!--  -->
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-
-        </div>
 
       </div>
-    </section><!-- End Icon Boxes Section -->
+    </section>
+    <!-- End Icon Boxes Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">

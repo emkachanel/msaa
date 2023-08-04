@@ -1,0 +1,32 @@
+CRITICAL - 2023-07-24 23:13:12 --> Call to undefined method App\Models\portfolioModel::getdata
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\admin.php(18): CodeIgniter\Model->__call('getdata', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 23:15:13 --> Call to undefined method App\Models\portfolioModel::getdata
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\admin.php(18): CodeIgniter\Model->__call('getdata', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 23:15:22 --> Call to undefined method App\Models\portfolioModel::getdata
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\admin.php(18): CodeIgniter\Model->__call('getdata', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-24 23:18:35 --> Call to undefined method App\Models\portfolioModel::getdata
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\admin.php(18): CodeIgniter\Model->__call('getdata', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

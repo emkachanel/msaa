@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class portfolioModel extends Model
+class teamModel extends Model
 {
-    protected $table      = 'portfolio';
+    protected $table      = 'teams';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id','judul','ket','gambar'];
-    public function getportfolio($id= false)
+    protected $allowedFields = ['id','nama','alamat','kontak','jabatan','bio','poto','facebook','instagram','youtube'];
+    public function getteam($id= false)
     {
         
             if ($id == false) {

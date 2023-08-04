@@ -37,7 +37,41 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'admin::index');
-$routes->get('admin/portfolio_create', 'admin::portfolio_create');
+$routes->get('profil','profil::index');
+$routes->get('profil/edit(:segment)','profil::edit/$1');
+$routes->get('profil/edit(:segment)','profil::edit/$1');
+$routes->post('profil/update(:any)', 'profil::update/$1');
+$routes->get('banner', 'banner::index');
+
+$routes->post('banner/tambahbanner', 'banner::tambahbanner');
+$routes->get('banner/edit(:segment)', 'banner::edit/$1');
+$routes->post('banner/update(:any)', 'banner::update/$1');
+$routes->delete('banner/delete/(:any)', 'banner::delete/$1');
+
+$routes->get('portfolio', 'portfolio::index');
+$routes->get('portfolio/edit(:segment)','portfolio::edit/$1');
+$routes->post('portfolio/tambahportfolio', 'portfolio::tambahportfolio');
+$routes->post('portfolio/update(:any)', 'portfolio::update/$1');
+$routes->delete('portfolio/delete/(:any)', 'portfolio::delete/$1');
+
+$routes->get('rekanan', 'rekanan::index');
+$routes->get('rekanan/edit(:segment)','rekanan::edit/$1');
+$routes->post('rekanan/tambahrekanan', 'rekanan::tambahrekanan');
+$routes->post('rekanan/update(:any)', 'rekanan::update/$1');
+$routes->delete('rekanan/delete/(:any)', 'rekanan::delete/$1');
+
+$routes->get('team', 'team::index');
+$routes->get('team/edit(:segment)','team::edit/$1');
+$routes->post('team/tambahteam', 'team::tambahteam');
+$routes->post('team/update(:any)', 'team::update/$1');
+$routes->delete('team/delete/(:any)', 'team::delete/$1');
+
+// $routes->get('team', 'team::index');
+// $routes->get('team/edit(:segment)','team::edit/$1');
+// $routes->post('team/tambahteam', 'team::tambahteam');
+// $routes->post('team/update(:any)', 'team::update/$1');
+// $routes->delete('team/delete/(:any)', 'team::delete/$1');
+
 $routes->post('admin/simpan', 'admin::simpan');
 $routes->post('admin/update(:any)', 'admin::update/$1');
 

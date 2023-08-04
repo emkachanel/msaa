@@ -537,14 +537,15 @@ section {
 --------------------------------------------------------------*/
 .icon-boxes {
   padding-top: 0;
-  position: relative;
+  position:relative;
   z-index: 100;
+  width: 100%;
 }
 .icon-boxes .icon-box {
-  padding: 40px 30px;
+  padding: 40px 10px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: #fefdfd;
   box-shadow: 5px 10px 29px 0 rgba(68, 88, 144, 0.2);
   transition: all 0.3s ease-in-out;
   border-radius: 10px;

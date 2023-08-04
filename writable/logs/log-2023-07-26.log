@@ -1,0 +1,43 @@
+CRITICAL - 2023-07-26 01:38:18 --> Invalid file: rekanan/edit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('rekanan/edit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('rekanan/edit', [], true)
+ 3 APPPATH\Controllers\rekanan.php(67): view('rekanan/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 01:46:17 --> Call to a member function getName() on null
+in APPPATH\Controllers\rekanan.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 01:55:48 --> Undefined array key "gambar"
+in APPPATH\Controllers\rekanan.php on line 103.
+ 1 APPPATH\Controllers\rekanan.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'APPPATH\\Controllers\\rekanan.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 01:56:31 --> unlink(assets/img/rekanan/): Is a directory
+in APPPATH\Controllers\rekanan.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/img/rekanan/): Is a directory', 'APPPATH\\Controllers\\rekanan.php', 103)
+ 2 APPPATH\Controllers\rekanan.php(103): unlink('FCPATH\\assets\\img\\rekanan')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->delete('1')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-26 01:56:48 --> unlink(assets/img/rekanan/): Is a directory
+in APPPATH\Controllers\rekanan.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/img/rekanan/): Is a directory', 'APPPATH\\Controllers\\rekanan.php', 103)
+ 2 APPPATH\Controllers\rekanan.php(103): unlink('FCPATH\\assets\\img\\rekanan')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->delete('1')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

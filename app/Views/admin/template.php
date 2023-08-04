@@ -20,6 +20,8 @@
     <link href="<?= base_url(); ?>/sbadmin/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?=base_url();?>/assets/css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
 </head>
 
@@ -55,8 +57,8 @@
                 <a class="nav-link" href="<?= base_url('banner') ?>"><i class="far fa-images" style="color: aqua;"></i></i><span>Banner</span></a>
                 <a class="nav-link" href="<?= base_url('portfolio') ?>"><i class="fab fa-usps" style="color: aqua;"></i><span>Portfolio</span></a>
                 <a class="nav-link" href="<?= base_url('galery') ?>"><i class="fas fa-running" style="color: aqua;"></i><span>Galery</span></a>
-                <a class="nav-link" href="<?= base_url('santri') ?>"><i class="fas fa-user-graduate" style="color: aqua;"></i><span>Santri</span></a>
-                <a class="nav-link" href="<?= base_url('pengurus') ?>"><i class="fas fa-chalkboard-teacher" style="color: aqua;"></i><span>Pengurus</span></a>
+                <a class="nav-link" href="<?= base_url('rekanan') ?>"><i class="fas fa-user-graduate" style="color: aqua;"></i><span>Rekanan</span></a>
+                <a class="nav-link" href="<?= base_url('team') ?>"><i class="fas fa-chalkboard-teacher" style="color: aqua;"></i><span>Team</span></a>
                 <a class="nav-link" href="<?= base_url('alumniadmin'); ?>"><i class="fas fa-skating" style="color: aqua;"></i><span>Alumni</span></a>
                 <a class="nav-link" href="<?= base_url('users'); ?>"><i class="fas fa-user-lock" style="color: aqua;"></i><span>User</span></a>
                 <a class="nav-link mt-3" href="<?php echo site_url('logout') ?>"><i class="fas fa-sign-out-alt" style="color: salmon;"></i><span>Keluar</span></a>
@@ -147,6 +149,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="<?= base_url(); ?>/assets/vendor/sweetalert/sweetalert2.all.js"></script>
     <script src="<?= base_url(); ?>/assets/vendor/aos/aos.js"></script>

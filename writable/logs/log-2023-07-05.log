@@ -1,0 +1,54 @@
+CRITICAL - 2023-07-05 10:17:55 --> Call to a member function getFile() on null
+in APPPATH\Controllers\profil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Profil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-05 10:18:31 --> Undefined variable $filelogo
+in APPPATH\Controllers\profil.php on line 16.
+ 1 APPPATH\Controllers\profil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filelogo', 'APPPATH\\Controllers\\profil.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Profil->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-05 10:18:49 --> Undefined variable $filelogo
+in APPPATH\Controllers\profil.php on line 16.
+ 1 APPPATH\Controllers\profil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filelogo', 'APPPATH\\Controllers\\profil.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Profil->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-05 10:18:50 --> Undefined variable $filelogo
+in APPPATH\Controllers\profil.php on line 16.
+ 1 APPPATH\Controllers\profil.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filelogo', 'APPPATH\\Controllers\\profil.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Profil->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-05 12:03:13 --> Array callback must have exactly two elements
+in APPPATH\Views\landpage.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 4 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-07-05 12:15:33 --> Undefined array key "|addres"
+in APPPATH\Views\landpage.php on line 59.
+ 1 APPPATH\Views\landpage.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "|addres"', 'APPPATH\\Views\\landpage.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\landpage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('landpage', [], true)
+ 5 APPPATH\Controllers\Home.php(18): view('landpage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
