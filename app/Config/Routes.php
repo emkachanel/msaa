@@ -66,11 +66,11 @@ $routes->post('team/tambahteam', 'team::tambahteam');
 $routes->post('team/update(:any)', 'team::update/$1');
 $routes->delete('team/delete/(:any)', 'team::delete/$1');
 
-// $routes->get('team', 'team::index');
-// $routes->get('team/edit(:segment)','team::edit/$1');
-// $routes->post('team/tambahteam', 'team::tambahteam');
-// $routes->post('team/update(:any)', 'team::update/$1');
-// $routes->delete('team/delete/(:any)', 'team::delete/$1');
+$routes->get('service', 'service::index');
+$routes->get('service/edit(:segment)','service::edit/$1');
+$routes->post('service/tambahservice', 'service::tambahservice');
+$routes->post('service/update(:any)', 'service::update/$1');
+$routes->delete('service/delete/(:any)', 'service::delete/$1');
 
 $routes->post('admin/simpan', 'admin::simpan');
 $routes->post('admin/update(:any)', 'admin::update/$1');
