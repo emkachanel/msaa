@@ -13,7 +13,8 @@ class serviceModel extends Model
         'nama',
         'uraian',
         'judul',
-        'isi'
+        'isi',
+        'gambar'
         
     ];
 

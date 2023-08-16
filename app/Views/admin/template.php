@@ -58,8 +58,9 @@
                 <a class="nav-link" href="<?= base_url('portfolio') ?>"><i class="fab fa-usps" style="color: aqua;"></i><span>Portfolio</span></a>
                 <a class="nav-link" href="<?= base_url('galery') ?>"><i class="fas fa-running" style="color: aqua;"></i><span>Galery</span></a>
                 <a class="nav-link" href="<?= base_url('rekanan') ?>"><i class="fas fa-user-graduate" style="color: aqua;"></i><span>Rekanan</span></a>
-                <a class="nav-link" href="<?= base_url('team') ?>"><i class="fas fa-chalkboard-teacher" style="color: aqua;"></i><span>Team</span></a>
-                <a class="nav-link" href="<?= base_url('service'); ?>"><i class="bi bi-clipboard-pulse"style="color: aqua;"></i><span>service</span></a>
+                <a class="nav-link" href="<?= base_url('team') ?>"><i class="fas fa-chalkboard-teacher" style="color: aqua;"></i><span>Tim Profesional</span></a>
+                <a class="nav-link" href="<?= base_url('service'); ?>"><i class="bi bi-clipboard-pulse"style="color: aqua;"></i><span>Layanan</span></a>
+                <a class="nav-link" href="<?= base_url('Klien'); ?>"><i class="bi bi-person-bounding-box"></i><span>klien</span></a>
                 <a class="nav-link" href="<?= base_url('users'); ?>"><i class="fas fa-user-lock" style="color: aqua;"></i><span>User</span></a>
                 <a class="nav-link mt-3" href="<?php echo site_url('logout') ?>"><i class="fas fa-sign-out-alt" style="color: salmon;"></i><span>Keluar</span></a>
 

@@ -26,6 +26,27 @@ class service extends BaseController
         return view('service/index', $data);
     }
 
+    public function tambahservice()
+    {
+       
+        $filegambar =$this->request->getFile('gambar');
+        $filegambar->move('assets/img/service');
+        $namagambar = $filegambar->getName();
+        
+            $save = new serviceModel();
+            $save->insert(
+            [
+                'nama'=>$this->request->getVar('nama'),
+                'judul'=>$this->request->getVar('judul'),
+                'uraian'=>$this->request->getVar('uraian'),
+                'isi'=>$this->request->getVar('isi'),
+                'gambar'=>$namagambar
+                 
+            ]);
+            session()->setFlashdata('pesan','data berhasil di tambah');
+        return redirect()->to('service');
+    }
+
     public function edit($id)
     {
         $service = $this->serviceModel->getservice($id);
@@ -37,13 +58,13 @@ class service extends BaseController
 
     public function update($id)
     {
-        $filelogo = $this->request->getFile('logo');
-        $namalogo = $filelogo->getName();
+        $filegambar = $this->request->getFile('gambar');
+        $namagambar = $filegambar->getName();
 
-        if (!empty($namalogo)) {
-            $filelogo->move('assets/img');
+        if (!empty($namagambar)) {
+            $filegambar->move('assets/img');
         } else {
-            $namalogo = $this->request->getVar('logolama');
+            $namagambar = $this->request->getVar('gambarlama');
         }
 
         $data = [
@@ -51,12 +72,20 @@ class service extends BaseController
             'uraian' => $this->request->getVar('uraian'),
             'judul' => $this->request->getVar('judul'),
             'isi' => $this->request->getVar('isi'),
-            'logo' => $namalogo
+            'gambar' => $namagambar
         ];
 
         $this->serviceModel->update($id, $data);
 
         session()->setFlashdata('pesan', 'Update berhasil');
+        return redirect()->to('service');
+    }
+    public function delete ($id)
+    {
+        $service=$this->serviceModel->find($id);
+        unlink('assets/img/service/'.$service['gambar']);
+        $this->serviceModel->delete($id);
+        session()->setFlashdata('pesan','Layanan berhasil di hapus');
         return redirect()->to('service');
     }
 }
