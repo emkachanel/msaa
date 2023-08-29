@@ -1,0 +1,117 @@
+ERROR - 2023-08-29 08:45:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'msaa' in C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'msaa', 3306, '', 0)
+#1 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\msaa\app\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\msaa\app\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+#8 C:\xampp\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'msaa' in C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\msaa\app\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\msaa\app\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+#7 C:\xampp\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-08-29 08:45:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'msaa'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lp`', [], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\lpModel.php(29): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\lpModel->getprofil()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-29 08:48:04 --> mysqli_sql_exception: Table 'msaa.rekanan' doesn't exist in C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\msaa\app\Models\rekananModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\msaa\app\Controllers\rekanan.php(19): App\Models\rekananModel->getrekanan()
+#8 C:\xampp\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\rekanan->index()
+#9 C:\xampp\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+#10 C:\xampp\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-29 08:48:04 --> Table 'msaa.rekanan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `rekanan`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rekanan`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rekanan`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rekanan`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\rekananModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\rekanan.php(19): App\Models\rekananModel->getrekanan()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\rekanan->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\rekanan))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-08-29 08:56:10 --> mysqli_sql_exception: Table 'msaa.teams' doesn't exist in C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\msaa\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\msaa\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\msaa\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\msaa\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\msaa\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\msaa\app\Models\teamModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\msaa\app\Controllers\team.php(19): App\Models\teamModel->getteam()
+#8 C:\xampp\htdocs\msaa\system\CodeIgniter.php(927): App\Controllers\team->index()
+#9 C:\xampp\htdocs\msaa\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\team))
+#10 C:\xampp\htdocs\msaa\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\msaa\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\msaa\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-29 08:56:10 --> Table 'msaa.teams' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `teams`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `teams`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `teams`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `teams`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\teamModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\team.php(19): App\Models\teamModel->getteam()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\team->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\team))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

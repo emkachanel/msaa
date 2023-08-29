@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class teamModel extends Model
 {
-    protected $table      = 'teams';
+    protected $table      = 'team';
     protected $primaryKey = 'id';
     protected $allowedFields = ['id','nama','alamat','kontak','jabatan','bio','poto','facebook','instagram','youtube'];
     public function getteam($id= false)
