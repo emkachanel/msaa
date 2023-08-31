@@ -54,9 +54,9 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
-    
-      <img class="image"src="<?=base_url();?>/assets/img/logoMSAA.png" alt="logo" style="width: 100px;">
-
+    <?php foreach ($profil as $logo): ?> 
+      <img class="image"src="<?= base_url();?>/assets/img/<?=$logo['logo'];?>" alt="logo" style="width: 100px;">
+    <?php endforeach;?>
       
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -103,8 +103,8 @@
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Selamat Datang Di <span>MSAA Group</span></h2>
-          <p class="animate__animated animate__fadeInUp">MSAA Gorup Adalah ....Dst</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <p class="animate__animated animate__fadeInUp">Konsultasi Hukum Dengan Advokat Yang Berpengalaman </p>
+          <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
         </div>
       </div>
 
@@ -215,7 +215,7 @@
 
         <div class="section-title">
           <h2>TENTANG KAMI</h2>
-          <p>MSAA Gorup Adalah ....Dst</p>
+          <!-- <p>MSAA Gorup Adalah ....Dst</p> -->
         </div>
 
         <div class="row content">
@@ -512,7 +512,7 @@
 
         <div class="section-title">
           <h2>TIM PROFESIONAL</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Dalam Melayani dan Memberikan Bantuan Hukum Kepada Klien, Kami Tentunya Memberikan Pelayanan Terbaik Yang Akan Kami Berikan Melalui Tim Kami Yang Tentunya Profesional Juga Berpengalaman .</p>
         </div>
 
         <div class="row">
@@ -591,7 +591,7 @@
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
+    <!-- <section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -673,59 +673,73 @@
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section> -->
+    <!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
+          <h2>Pertanyaan Yang Sering Kami Peroleh</h2>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Siapa saja yang berhak memperoleh Bantuan Hukum ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                 <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                Setiap Kalangan,Golongan,Organinasi,Individu,Masyarakat Siapapun YAng Membutuhkan  Bantuan Hukum, Maka Kami Siap Untuk Membantu Prosesnya Dari Awal Hingga Akhir,
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Apa saja syarat memperoleh Bantuan Hukum? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+               1. Fc/scan KTP/KK <br>
+                2.Scan surat keterangan miskin/tidak mampu <br>
+               3.Kronologi kasus/permasalahan
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apasaja Pelayanan Dalam Bantuan Hukum Yang Kami Sediakan? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  1.Bantuan Pengisian formulir Permohonan Bantuan hukum <br>
+                  2.Bantuan Pembuatan Dokumen Hukum; <br>
+                  3.Advis, Konsultasi Hukum dan Bantuan Hukum Lainnya Baik Dalam Perkara Pidana Maupun Perkara Perdata <br>
+                  4.Rujukan Kepada Ketua Pengadilan Negeri Untuk Pembebasan Pembayaran Biaya Perkara Sesuai Syarat Yang Berlaku
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Kapan Kami Dapat Memberikan Bantuan Hukum Kepada Seseorang,masyarakat,Lembaga,Organisasi ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                Pasal 18 ayat (4) menyatakan bahwa seseorang berhak mendapatkan bantuan hukum sejak penyidikan sampai dengan putusan pengadilan yang berkekuatan hukum tetap
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Pemberian Bantuan Hukum Berdasarkan Asas Apa?? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                (1).Bantuan Hukum diberikan kepada Penerima Bantuan Hukum yang menghadapi masalah hukum. <br>
+                (2).Bantuan hukum dilaksanakan berdasarkan asas; <br>
+                a. keadilan; <br>
+                b. persamaan kedudukan dalam hukum;<br> 
+                c. perlindungan terhadap hak asasi manusia; <br> 
+                d. keterbukaan;<br> 
+                e. efisiensi; <br> 
+                f. efektifitas; dan <br>
+                g. akuntabilitas. 
                 </p>
               </div>
             </li>
