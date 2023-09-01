@@ -246,17 +246,12 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-in">
-        <p>>Logo Perusahaan yang bekerja sama / sponsor perusahaan </p> <br>
+        
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center"> 
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            <?php foreach($rekanan as $rekan):?>
+            <div class="swiper-slide"><img src="<?php base_url();?>/assets/img/rekanan/<?=$rekan['logo'];?>" class="img-fluid" alt=""></div>
+            <?php endforeach ;?>
           </div>
           <div class="swiper-pagination"></div>
         </div>

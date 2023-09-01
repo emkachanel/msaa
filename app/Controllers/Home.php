@@ -41,7 +41,8 @@ class Home extends BaseController
             'banner'=>$banner,
             'portfolio'=>$portfolio,
             'service'=>$service,
-            'team'=>$team
+            'team'=>$team,
+            'rekanan'=>$rekanan
             
         ];
         return view('landpage',$data);
