@@ -28,7 +28,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="uraian" class="form-label">uraian</label>
-                            <input type="text" class="form-control" id="uraian" name="uraian">
+                            <textarea type="text" class="form-control" id="uraian" name="uraian">
                         </div>
                         <div class="mb-3">
                             <label for="isi" class="form-label">ket</label>
