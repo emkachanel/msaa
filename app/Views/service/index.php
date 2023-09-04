@@ -23,17 +23,17 @@
                 <div class="modal-body">
                     <form action="<?= base_url('/service/tambahservice/'); ?>" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama">
+                            <label for="judul" class="form-label">judul</label>
+                            <input type="text" class="form-control" id="judul" name="judul">
                         </div>
                         <div class="mb-3">
                             <label for="uraian" class="form-label">uraian</label>
-                            <textarea type="text" class="form-control" id="uraian" name="uraian">
+                            <textarea type="text" class="form-control" id="uraian" name="uraian"></textarea>
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="isi" class="form-label">ket</label>
-                            <input type="text" class="form-control" id="isi" name="isi">
-                        </div>
+                            <textarea type="text" class="form-control" id="isi" name="isi"></textarea>
+                        </div> -->
 
                         <div class="mb-3">
                             <label for="gambar" class="form-label">Gambar</label>
@@ -66,9 +66,8 @@
                 <thead data-aos="fade-right">
                     <tr>
                         <th scope="col">No</th>
-                        <th scope="col">nama</th>
+                        <th scope="col">judul</th>
                         <th scope="col">uraian</th>
-                        <th scope="col">isi</th>
                         <th scope="col">Gambar</th>
                         <th scope="col">option</th>
                     </tr>
@@ -80,9 +79,9 @@
                         <tr>
 
                             <th scope="row"><?= $no++ ?></th>
-                            <td><?= $serv['nama']; ?></td>
+                            <td><?= $serv['judul']; ?></td>
                             <td><?= $serv['uraian']; ?></td>
-                            <td><?= $serv['isi']; ?></td>
+                            
                             <td><img width="75px" class="img rounded float-start " src="<?= base_url(); ?>/assets/img/service/<?= $serv['gambar']; ?>" alt=""></td>
                             <td class="col-2">
                                 <a class="btn btn-primary d-inline btn-lg" href="service/edit<?= $serv['id']; ?>"><i class="fas fa-edit"></i></a>

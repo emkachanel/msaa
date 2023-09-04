@@ -36,11 +36,10 @@ class service extends BaseController
             $save = new serviceModel();
             $save->insert(
             [
-                'nama'=>$this->request->getVar('nama'),
+                
                 'judul'=>$this->request->getVar('judul'),
                 'uraian'=>$this->request->getVar('uraian'),
-                'isi'=>$this->request->getVar('isi'),
-                'gambar'=>$namagambar
+                'gambar'=>$namagambar,
                  
             ]);
             session()->setFlashdata('pesan','data berhasil di tambah');
@@ -68,10 +67,10 @@ class service extends BaseController
         }
 
         $data = [
-            'nama' => $this->request->getVar('nama'),
+            
             'uraian' => $this->request->getVar('uraian'),
             'judul' => $this->request->getVar('judul'),
-            'isi' => $this->request->getVar('isi'),
+            
             'gambar' => $namagambar
         ];
 

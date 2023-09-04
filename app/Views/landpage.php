@@ -64,10 +64,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#team">Tim</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <!-- <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -318,16 +318,36 @@
           <h2>LAYANAN & KAPASITAS</h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
-
+        
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <i class="bi bi-card-checklist"></i>
-              <h4><a href="#">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
+          <!-- <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"> -->
+            <!-- <div class="icon-box"> -->
+              
+              <?php foreach($service as $serv):?>
+             <br> <br>
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne<?=$serv['id'];?>" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    <!-- <i class="bi bi-card-checklist"></i> -->
+                    <img class="img"src="<?= base_url();?>/assets/img/service/<?= $serv['gambar'];?>" alt=""style="max-width:75px;">
+                    ___<h4><?= $serv['judul'];?></h4>
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne<?=$serv['id'];?>" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>
+                      <?= $serv['uraian'];?>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+              
+            <?php endforeach;?>
+            <!-- </div> -->
           </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
               <h4><a href="#">Dolor Sitema</a></h4>
@@ -362,7 +382,7 @@
               <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Services Section -->
@@ -389,7 +409,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfoio</h2>
+          <h2>GALLERY</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
