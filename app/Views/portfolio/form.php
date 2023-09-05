@@ -8,8 +8,8 @@
           <form action="" method="post">
         <li class="list-group-item">
             <div class="mb-3">
-                    <label for="name" class="form-label">Judul</label>
-                    <input type="text" class="form-control" id="name" name="name"placeholder="">
+                    <label for="judul" class="form-label">Judul</label>
+                    <input type="text" class="form-control" id="judul" name="judul"placeholder="">
     
                 </div>
             <div class="mb-3">

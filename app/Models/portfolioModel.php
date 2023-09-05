@@ -8,7 +8,7 @@ class portfolioModel extends Model
 {
     protected $table      = 'portfolio';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['id','judul','ket','gambar'];
+    protected $allowedFields = ['id','judul','keterangan','gambar'];
     public function getportfolio($id= false)
     {
         

@@ -27,8 +27,8 @@
                             <input type="text" class="form-control" id="judul" name="judul">
                         </div>
                         <div class="mb-3">
-                            <label for="ket" class="form-label">ket</label>
-                            <input type="text" class="form-control" id="ket" name="ket">
+                            <label for="keterangan" class="form-label">keterangan</label>
+                            <input type="text" class="form-control" id="keterangan" name="keterangan">
                         </div>
 
                         <div class="mb-3">
@@ -63,7 +63,7 @@
                     <tr>
                         <th scope="col">No</th>
                         <th scope="col">Judul</th>
-                        <th scope="col">ket</th>
+                        <th scope="col">keterangan</th>
                         <th scope="col">Gambar</th>
                         <th scope="col">option</th>
                     </tr>
@@ -76,7 +76,7 @@
 
                             <th scope="row"><?= $no++ ?></th>
                             <td><?= $port['judul']; ?></td>
-                            <td><?= $port['ket']; ?></td>
+                            <td><?= $port['keterangan']; ?></td>
                             <td><img width="75px" class="img rounded float-start " src="<?= base_url(); ?>/assets/img/portfolio/<?= $port['gambar']; ?>" alt=""></td>
                             <td class="col-2">
                                 <a class="btn btn-primary d-inline btn-lg" href="portfolio/edit<?= $port['id']; ?>"><i class="fas fa-edit"></i></a>

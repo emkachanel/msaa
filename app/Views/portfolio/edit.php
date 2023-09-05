@@ -15,8 +15,8 @@
                         <input type="text" class="form-control" id="judul" name="judul"value="<?= $portfolio['judul'];?>">
                     </div>
                     <div class="mb-3">
-                        <label for="ket" class="form-label">ket</label>
-                        <input type="text" class="form-control" id="ket" name="ket"value="<?= $portfolio['ket'];?>">
+                        <label for="keterangan" class="form-label">keterangan</label>
+                        <input type="text" class="form-control" id="keterangan" name="keterangan"value="<?= $portfolio['keterangan'];?>">
                     </div>
                    
                     <div class="mb-3">
