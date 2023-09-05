@@ -219,25 +219,26 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
+            <?php foreach($profil as $about):?>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              <?= $about['about'];?>
             </p>
-            <ul>
+            <?php endforeach ;?>
+            <!-- <ul>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
               <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
+            </ul> -->
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
+          <!-- <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
-          </div>
+            
+          </div> -->
         </div>
 
       </div>
@@ -274,7 +275,7 @@
             <div class="content">
               <h3>VISI & MISI</h3>
               <p>
-                Sebagai Lembaga Bantuan Hukum  
+                 
               </p>
             </div>
 
@@ -283,18 +284,22 @@
                 <li data-aos="fade-up" data-aos-delay="100">
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>VISI</span>  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <?php foreach($profil as $visi):?>
                     <p>
-                      Isi / Uraian Visi
+                      <?= $visi['visi'];?>
                     </p>
+                    <?php endforeach;?>
                   </div>
                 </li>
 
                 <li data-aos="fade-up" data-aos-delay="200">
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>MISI</span> <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Isi / Uraian Misi
+                  <?php foreach($profil as $misi):?>
+                  <p>
+                  <?= $misi['misi'];?>
                     </p>
+                    <?php endforeach;?>
                   </div>
                 </li>
 
@@ -393,11 +398,11 @@
 
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Hubungi Kami Sekarang</h3>
+            <p> Tanpa Ragu,Segera Konsultasikan Masalah Anda Kepada Kami.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Telp Sekarang.</a>
           </div>
         </div>
 
@@ -410,7 +415,7 @@
 
         <div class="section-title">
           <h2>GALLERY</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p></p>
         </div>
 
         <!-- <div class="row">
