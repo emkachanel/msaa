@@ -265,9 +265,10 @@
       <div class="container-fluid">
 
         <div class="row">
-
-          <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a>
+        <!-- style='background-image: url("assets/img/why-us.jpg");' -->
+          <div class="col-lg-5 align-items-stretch position-relative video-box"  data-aos="fade-right">
+          <iframe width="760" height="515" src="https://www.youtube.com/embed/gJboWR38JSE?si=_Ed-j1sb7lWfMQnw" title="YouTube video player" frameborder="0" allow="accelerometer;clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+          <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a> -->
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
